@@ -8,7 +8,7 @@ void GUI::print( const std::string& result )
   std::cout << result << std::endl;
 }
 
-int main( int argc, char const*argv[] )
+int main( int, char** )
 {
   std::shared_ptr<View::GUI> GuiPtr = std::make_shared<View::GUI>();
   std::unique_ptr<Model::DocsCore> docPtr = std::make_unique<Model::DocsCore>();
